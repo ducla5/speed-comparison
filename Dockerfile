@@ -5,15 +5,17 @@ USER user
 
 # Get the keys
 RUN gpg --recv-keys --keyserver hkp://pgp.mit.edu EF5430F071E1B235 && \
-    gpg --recv-keys --keyserver hkp://pgp.mit.edu C2BF0BC433CFC8B3 && \
-    gpg --recv-keys --keyserver hkp://pgp.mit.edu 702353E0F7E48EDB
+    gpg --recv-keys 0BD78B5F97500D450838F95DFE857D9A90D90EC1 && \
+    gpg --recv-keys C52048C0C0748FEE227D47A2702353E0F7E48EDB
 
 # Install packages from the AUR
-RUN yay --noconfirm -S php56
+RUN yay --noconfirm -S php5.6
 # RUN yay --noconfirm -S swift-bin # doesn't work atm due to faulty icu55 package
 
 # Switch back
 USER root
+
+RUN pacman --noconfirm -Syu
 
 # Programming languages
 RUN pacman --noconfirm -S pypy
