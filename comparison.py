@@ -44,7 +44,8 @@ class Measure:
             if self.debug or cmd_compile.return_code is not 0:
                 logging.info(cmd_compile.out)
 
-        print(f"Version: {delegator.run(self.version_cmd).out.splitlines()[0]}")
+        print(
+            f"Version: {delegator.run(self.version_cmd).out.splitlines()[0]}")
 
         times = []
         count = 0
@@ -69,11 +70,11 @@ class Measure:
         print(f"Result: {result}")
 
         # Calculate accuracy
-        if not self.debug:
-            accuracy = self.diff_letters(f"{math.pi:.{len(result)-2}f}", result)
-            print(f"Accuracy: {accuracy:.2%}")
-        else:
-            accuracy = 0.0000
+        # if not self.debug:
+        # accuracy = self.diff_letters(f"{math.pi:.{len(result)-2}f}", result)
+        # print(f"Accuracy: {accuracy:.2%}")
+        # else:
+        accuracy = 0.0000
 
         print()  # new line
 
@@ -137,6 +138,7 @@ def ask_yes_no(question, default="yes"):
         else:
             print("Please respond with 'yes' or 'no'.\n")
 
+
 def measurement():
     """Management function for the measurement.
     """
@@ -157,14 +159,17 @@ def measurement():
         ["Python 3 (CPython)", "python --version", "python leibniz.py"],
         ["R", "R --version", "Rscript leibniz.r"],
         ["Ruby", "ruby --version", "ruby leibniz.rb"],
-        ["PHP 5.6", "php56 --version", "php56 leibniz.php"],
-        ["Java", "pacman -Qi jdk8-openjdk | grep 'Version' | cut -d: -f2- | cut -d ' ' -f2", "java leibniz", "javac leibniz.java"],
+        ["Java", "echo '8'",
+            "java leibniz", "javac leibniz.java"],
         ["Lua", "lua -v", "lua leibniz.lua"],
-        ["Rust", "rustc --version", "./leibniz", "export RUST_BACKTRACE=1; rustc leibniz.rs"],
+        ["Rust", "rustc --version", "./leibniz",
+            "export RUST_BACKTRACE=1; rustc leibniz.rs"],
         ["JS (node)", "node --version", "node leibniz.js"],
         ["PHP 7", "php --version", "php leibniz.php"],
-        ["Python 3 (pypy)", "pacman -Qi pypy | grep 'Version' | cut -d: -f2- | cut -d ' ' -f2", "pypy leibniz.py"],
-        ["Nim", "pacman -Qi nim | grep 'Version' | cut -d: -f2 | cut -d ' ' -f2", "./leibniz", "nim c --verbosity:0 leibniz.nim"],
+        ["Python 3 (pypy)", "pacman -Qi pypy | grep 'Version' | cut -d: -f2- | cut -d ' ' -f2",
+         "pypy leibniz.py"],
+        ["Nim", "pacman -Qi nim | grep 'Version' | cut -d: -f2 | cut -d ' ' -f2",
+            "./leibniz", "nim c --verbosity:0 leibniz.nim"],
         ["C++", "g++ --version", "./leibniz", "g++ leibniz.cpp -o leibniz"],
         ["Crystal", "crystal --version", "./leibniz", "crystal build leibniz.cr"],
         ["C", "gcc --version", "./leibniz", "gcc leibniz.c -o leibniz"],
@@ -189,6 +194,8 @@ def measurement():
             dict_writer.writeheader()
             dict_writer.writerows(complete_results)
 
-        print(f"Saved the results in: {colored('results/data.csv', 'red', attrs=['bold'])}")
+        print(
+            f"Saved the results in: {colored('results/data.csv', 'red', attrs=['bold'])}")
+
 
 measurement()

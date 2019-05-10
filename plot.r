@@ -36,7 +36,7 @@ p <- ggplot(
     labs(
         title       = "Speed comparison of various porgramming languages",
         subtitle    = "Method: calculating π through the Leibniz formula x times",
-        caption     = "https://github.com/niklas-heer/speed-comparison",
+        caption     = "https://github.com/ducla5/speed-comparison",
         x           = "Languages",
         y           = "Median time (ms)") +
     theme(

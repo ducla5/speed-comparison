@@ -1,4 +1,4 @@
-![plot](https://raw.github.com/niklas-heer/speed-comparison/master/.github/plot_v1.4.png "Speed comparison of programming languages")
+![plot](https://raw.github.com/niklas-heer/speed-comparison/master/.github/plot_v1.5.png "Speed comparison of programming languages")
 
 ---
 
@@ -40,159 +40,127 @@ You are also welcome to contribute and help me make fix my possible misuse of so
 
 ```text
 ======= Comparison =======
-Iterations: 1000000
+Iterations: 10000000
 
 > Julia
-Version: julia version 0.6.2
-Speed (all): 747ms, 723ms, 715ms, 730ms, 724ms, 701ms, 718ms, 726ms, 710ms, 725ms
-Speed (best): 701ms
-Speed (worst): 747ms
-Speed (median): 723.5ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
+Version: julia version 1.1.0
+Speed (all): 1253ms, 1287ms, 1300ms, 1282ms, 1342ms, 1300ms, 1285ms, 1257ms, 1290ms, 1314ms
+Speed (best): 1253ms
+Speed (worst): 1342ms
+Speed (median): 1288.5ms
+Result: 
 
 > Python 3 (CPython)
-Version: Python 3.6.4
-Speed (all): 245ms, 259ms, 223ms, 235ms, 247ms, 255ms, 260ms, 242ms, 226ms, 228ms
-Speed (best): 223ms
-Speed (worst): 260ms
-Speed (median): 243.5ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: Python 3.7.3
+Speed (all): 2663ms, 2602ms, 2663ms, 2637ms, 2590ms, 2708ms, 2562ms, 2667ms, 2517ms, 2504ms
+Speed (best): 2504ms
+Speed (worst): 2708ms
+Speed (median): 2619.5ms
+Result: 3.1415927535897814
 
 > R
-Version: R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
-Speed (all): 175ms, 170ms, 182ms, 182ms, 181ms, 190ms, 177ms, 180ms, 181ms, 182ms
-Speed (best): 170ms
-Speed (worst): 190ms
-Speed (median): 181.0ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
+Version: R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Speed (all): 1893ms, 1876ms, 1876ms, 1879ms, 1911ms, 1886ms, 1886ms, 1894ms, 1876ms, 1898ms
+Speed (best): 1876ms
+Speed (worst): 1911ms
+Speed (median): 1886.0ms
+Result: 3.1415925535898115
 
 > Ruby
-Version: ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-linux]
-Speed (all): 139ms, 133ms, 125ms, 120ms, 124ms, 134ms, 127ms, 123ms, 133ms, 136ms
-Speed (best): 120ms
-Speed (worst): 139ms
-Speed (median): 130.0ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
-
-> Swift
-Version: Swift version 4.0.3 (swift-4.0.3-RELEASE)
-Speed (all): 112ms, 100ms, 98ms, 97ms, 105ms, 98ms, 99ms, 98ms, 101ms, 103ms
-Speed (best): 97ms
-Speed (worst): 112ms
-Speed (median): 99.5ms
-Result: 3.14159165359177
-Accuracy: 75.00%
-
-> PHP 5.6
-Version: PHP 5.6.33 (cli) (built: Mar  1 2018 23:44:30)
-Speed (all): 84ms, 80ms, 78ms, 80ms, 79ms, 80ms, 77ms, 83ms, 79ms, 78ms
-Speed (best): 77ms
-Speed (worst): 84ms
-Speed (median): 79.5ms
-Result: 3.1415936535887745
+Version: ruby 2.6.3p62 (2019-04-16 revision 67580) [x86_64-linux]
+Speed (all): 1229ms, 1236ms, 1225ms, 1328ms, 1222ms, 1211ms, 1277ms, 1228ms, 1371ms, 1382ms
+Speed (best): 1211ms
+Speed (worst): 1382ms
+Speed (median): 1232.5ms
+Result: 3.1415925535898115
 
 > Java
-Version: 8.u144-1
-Speed (all): 72ms, 76ms, 73ms, 83ms, 75ms, 68ms, 77ms, 79ms, 76ms, 77ms
-Speed (best): 68ms
-Speed (worst): 83ms
-Speed (median): 76.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
-
-> JS (node)
-Version: v9.6.1
-Speed (all): 69ms, 65ms, 67ms, 66ms, 66ms, 66ms, 66ms, 70ms, 72ms, 65ms
-Speed (best): 65ms
-Speed (worst): 72ms
-Speed (median): 66.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
-
-> Python 3 (pypy)
-Version: 5.10.0-5
-Speed (all): 112ms, 40ms, 41ms, 43ms, 42ms, 41ms, 40ms, 41ms, 41ms, 43ms
-Speed (best): 40ms
-Speed (worst): 112ms
-Speed (median): 41.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: 8
+Speed (all): 145ms, 138ms, 130ms, 123ms, 130ms, 127ms, 124ms, 131ms, 137ms, 134ms
+Speed (best): 123ms
+Speed (worst): 145ms
+Speed (median): 130.5ms
+Result: 3.1415927535897814
 
 > Lua
-Version: Lua 5.3.4  Copyright (C) 1994-2017 Lua.org, PUC-Rio
-Speed (all): 74ms, 67ms, 72ms, 70ms, 72ms, 72ms, 72ms, 68ms, 75ms, 76ms
-Speed (best): 67ms
-Speed (worst): 76ms
-Speed (median): 72.0ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
+Version: Lua 5.3.5  Copyright (C) 1994-2018 Lua.org, PUC-Rio
+Speed (all): 801ms, 871ms, 828ms, 777ms, 870ms, 816ms, 777ms, 853ms, 832ms, 863ms
+Speed (best): 777ms
+Speed (worst): 871ms
+Speed (median): 830.0ms
+Result: 3.1415925535898115
 
 > Rust
-Version: rustc 1.24.0
-Speed (all): 75ms, 74ms, 73ms, 71ms, 74ms, 71ms, 71ms, 67ms, 68ms, 70ms
-Speed (best): 67ms
-Speed (worst): 75ms
-Speed (median): 71.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: rustc 1.34.1
+Speed (all): 432ms, 426ms, 428ms, 425ms, 428ms, 424ms, 425ms, 425ms, 424ms, 427ms
+Speed (best): 424ms
+Speed (worst): 432ms
+Speed (median): 425.5ms
+Result: 3.1415927535897814
+
+> JS (node)
+Version: v11.15.0
+Speed (all): 123ms, 115ms, 116ms, 114ms, 117ms, 114ms, 120ms, 128ms, 123ms, 113ms
+Speed (best): 113ms
+Speed (worst): 128ms
+Speed (median): 116.5ms
+Result: 3.1415927535897814
 
 > PHP 7
-Version: PHP 7.2.2 (cli) (built: Jan 30 2018 19:18:38) ( NTS )
-Speed (all): 58ms, 55ms, 52ms, 55ms, 54ms, 52ms, 55ms, 57ms, 54ms, 53ms
-Speed (best): 52ms
-Speed (worst): 58ms
-Speed (median): 54.5ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: PHP 7.3.5 (cli) (built: Apr 30 2019 21:05:09) ( NTS )
+Speed (all): 452ms, 447ms, 447ms, 448ms, 446ms, 443ms, 456ms, 473ms, 448ms, 444ms
+Speed (best): 443ms
+Speed (worst): 473ms
+Speed (median): 447.5ms
+Result: 3.1415927535897814
+
+> Python 3 (pypy)
+Version: 7.1.1-1
+Speed (all): 255ms, 158ms, 157ms, 152ms, 161ms, 154ms, 167ms, 161ms, 153ms, 151ms
+Speed (best): 151ms
+Speed (worst): 255ms
+Speed (median): 157.5ms
+Result: 3.1415927535897814
 
 > Nim
-Version: 0.17.2-2
-Speed (all): 43ms, 39ms, 45ms, 41ms, 40ms, 39ms, 40ms, 40ms, 38ms, 39ms
-Speed (best): 38ms
-Speed (worst): 45ms
-Speed (median): 40.0ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
+Version: 0.18.0-1
+Speed (all): 481ms, 453ms, 430ms, 427ms, 421ms, 423ms, 425ms, 424ms, 426ms, 423ms
+Speed (best): 421ms
+Speed (worst): 481ms
+Speed (median): 425.5ms
+Result: 3.1415925535898115
 
 > C++
-Version: g++ (GCC) 7.3.0
-Speed (all): 11ms, 10ms, 10ms, 9ms, 10ms, 9ms, 10ms, 8ms, 8ms, 8ms
-Speed (best): 8ms
-Speed (worst): 11ms
-Speed (median): 9.5ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: g++ (GCC) 8.3.0
+Speed (all): 42ms, 35ms, 34ms, 34ms, 37ms, 35ms, 34ms, 34ms, 38ms, 35ms
+Speed (best): 34ms
+Speed (worst): 42ms
+Speed (median): 35.0ms
+Result: 3.1415927535897814
 
 > Crystal
-Version: Crystal 0.24.1 (2017-12-20)
-Speed (all): 12ms, 10ms, 9ms, 9ms, 9ms, 9ms, 9ms, 9ms, 9ms, 10ms
-Speed (best): 9ms
-Speed (worst): 12ms
-Speed (median): 9.0ms
-Result: 3.1415916535917745
-Accuracy: 66.67%
-
-> Go
-Version: go version go1.10 linux/amd64
-Speed (all): 7ms, 6ms, 6ms, 6ms, 5ms, 5ms, 6ms, 5ms, 6ms, 6ms
-Speed (best): 5ms
-Speed (worst): 7ms
-Speed (median): 6.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: Crystal 0.28.0 (2019-04-17)
+Speed (all): 59ms, 38ms, 42ms, 37ms, 39ms, 38ms, 36ms, 38ms, 40ms, 37ms
+Speed (best): 36ms
+Speed (worst): 59ms
+Speed (median): 38.0ms
+Result: 3.1415925535898115
 
 > C
-Version: gcc (GCC) 7.3.0
-Speed (all): 9ms, 7ms, 6ms, 7ms, 7ms, 6ms, 6ms, 6ms, 6ms, 6ms
-Speed (best): 6ms
-Speed (worst): 9ms
-Speed (median): 6.0ms
-Result: 3.1415936535887745
-Accuracy: 72.22%
+Version: gcc (GCC) 8.3.0
+Speed (all): 37ms, 39ms, 35ms, 33ms, 33ms, 33ms, 33ms, 33ms, 34ms, 33ms
+Speed (best): 33ms
+Speed (worst): 39ms
+Speed (median): 33.0ms
+Result: 3.1415927535897814
+
+> Go
+Version: go version go1.12.4 linux/amd64
+Speed (all): 41ms, 19ms, 18ms, 18ms, 19ms, 18ms, 19ms, 18ms, 17ms, 17ms
+Speed (best): 17ms
+Speed (worst): 41ms
+Speed (median): 18.0ms
+Result: 3.1415927535897814
 ```
 
 ## Run it yourself
@@ -236,7 +204,7 @@ No they are not included, because when running the program in the real world thi
 - [x] Add Java
 - [x] Add Swift
 - [x] Add R
-- [x] Add [Php 5.6](https://aur.archlinux.org/packages/php56/)
+- [ ] Add Php 5.6
 - [ ] Add phpv8js
 - [ ] Add python2
 - [ ] Add Smalltalk
